@@ -1,0 +1,33 @@
+{
+  "author": "Adam Pancutt <adam@pancutt.com>",
+  "description": "Modify URL instances cleanly and safely. Works in any environment that supports the URL API.",
+  "devDependencies": {
+    "@types/jest": "27",
+    "jest": "27",
+    "rimraf": "3",
+    "ts-jest": "27",
+    "typescript": "4"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  },
+  "keywords": [
+    "extend",
+    "manipulate",
+    "modify",
+    "url",
+    "urlsearchparams"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "url-modify",
+  "scripts": {
+    "build": "tsc --project ./tsconfig.build.json",
+    "prebuild": "rimraf ./dist/",
+    "prepublishOnly": "yarn run build",
+    "test": "jest"
+  },
+  "types": "dist/index.d.ts",
+  "version": "0.0.0"
+}

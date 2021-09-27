@@ -101,7 +101,7 @@ console.log(urlModify({ search: { abc: '123' } }, base, { searchBehavior: 'clear
 
 ## Rationale
 
-While the URL API simplies creating URL strings, it's difficult to cleanly mutate URL instances
+While the URL API simplifies creating URL strings, it's difficult to cleanly mutate URL instances
 without creating excessive variables and/or risk modifying the original URL instance.
 
 Until the spec allows you to do something like...
